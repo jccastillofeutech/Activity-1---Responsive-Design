@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Libre Franklin', 'Segoe UI', Tahoma, sans-serif;
+    line-height: 1.6;
+    background-color: #000000;
+    color: #eeeeee;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+header {
+    width: 100%;
+    background-color: #8b0000;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #ff0000;
+}
+
+header h1 {
+    font-family: 'Creato Display', 'Special Gothic Expanded One', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.main-content {
+    background-color: #111111;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    border-left: 5px solid #cc0000;
+    flex: 1 1 100%; 
+}
+
+.post-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    background-color: #222;
+}
+
+.post-title {
+    font-family: 'Creato Display', 'Special Gothic Expanded One', sans-serif;
+    font-size: 2rem;
+    color: #ff4d4d;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.post-meta {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.post-body p {
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.sidebar {
+    background-color: #111111;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    border-top: 5px solid #cc0000;
+    flex: 1 1 100%;
+    height: fit-content; 
+}
+
+.sidebar h3 {
+    font-family: 'Creato Display', 'Special Gothic Expanded One', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ff4d4d;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.recent-posts {
+    list-style: none;
+}
+
+.recent-posts li {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #222;
+    padding-bottom: 10px;
+}
+
+.recent-posts li:last-child {
+    border-bottom: none;
+}
+
+.recent-posts a {
+    text-decoration: none;
+    color: #e0e0e0;
+    transition: color 0.3s ease;
+    display: block;
+    font-weight: bold;
+}
+
+.recent-posts a:hover {
+    color: #ff0000;
+}
+
+.recent-posts span {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 4px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #555;
+    margin-top: 20px;
+    border-top: 1px solid #222;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    .main-content {
+        flex: 0 0 calc(70% - 10px); 
+        max-width: calc(70% - 10px);
+    }
+
+    .sidebar {
+        flex: 0 0 calc(30% - 10px); 
+        max-width: calc(30% - 10px);
+    }
+}
